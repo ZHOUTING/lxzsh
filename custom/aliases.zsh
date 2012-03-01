@@ -3,9 +3,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 alias ls='ls --color=auto'
-alias l=ls
-alias la='ls -ahlF'
-alias ll='ls -hl'
+alias l='ls -l'
+alias ll='ls -ahlF'
 
 alias rm="rm -I"
 
