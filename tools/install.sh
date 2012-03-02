@@ -15,7 +15,7 @@ then
 fi
 
 echo "\033[0;34mUsing the zsh template file and adding it to ~/.zshrc\033[0m"
-ln -s ~/.zsh/templates/lxzshrc.zsh-template ~/.zshrc
+ln -s ~/.zsh/templates/`uname`.zsh-template ~/.zshrc
 
 echo "\033[0;34mTime to change your default shell to zsh!\033[0m"
 chsh -s `which zsh`
