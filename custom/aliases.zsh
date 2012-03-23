@@ -27,7 +27,7 @@ alias y='youtube-dl -c -l'
 alias xld='xl download --continue --delete'
 alias xll='xl list --speed --progress'
 
-alias cdele='cd ~/workspace/eleme/trunk'
+alias cdele='workon elemeenv; cd ~/workspace/eleme/trunk;'
 alias cddj='workon djangoenv; cd ~/workspace/eleme/elemedjango'
 alias cdpr='workon pyramidenv; cd ~/workspace/eleme/elemepyramid/'
 alias cdpy='workon pyenv; cd ~/workspace/source/'
