@@ -5,5 +5,4 @@ export LC_TYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export EDITOR=vim
-export PAGER=vimpager
 export CLICOLOR=1
