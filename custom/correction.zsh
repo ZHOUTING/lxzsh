@@ -1,5 +1,1 @@
-alias git='nocorrect git'
-alias ssh='nocorrect ssh'
-alias ln='nocorrect ln'
-alias rm='nocorrect rm'
-alias aptitude='nocorrect aptitude'
+unsetopt correct_all
