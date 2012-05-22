@@ -1,4 +1,4 @@
-export PATH=$HOME/bin/:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # in case brew installed a newer version of python.
 [[ -d "/usr/local/share/python" ]] && \
