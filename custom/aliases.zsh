@@ -18,9 +18,9 @@ alias tmuxa='tmux a || tmux'
 alias rmds='find . -name ".DS_Store" -exec rm -f "{}" \;'
 alias rmpyc='find . -name "*.pyc" -exec rm -f "{}" \;'
 
-alias s='pkill -f "ssh -Nfn -D 7070"; ssh -Nfn -D 7070 elemevps 1>/dev/null 2>&1'
-alias wk='python2.6 ~/tools/wiki/wikiserver.py 1>/dev/null 2>&1 &'
-alias p='cd ~/tools/goagent/; python proxy.py &'
+alias s='pkill -f "ssh -Nfn -D 7070"; nohup ssh -Nfn -D 7070 elemevps 1>/dev/null 2>&1'
+alias wk='nohup python2.6 ~/tools/wiki/wikiserver.py 1>/dev/null 2>&1 &'
+alias p='cd ~/tools/goagent/; nohup python proxy.py 1>/dev/null 2>&1 &'
 alias vpn='cd ~/tools/sshuttle; bash sshuttle --dns -vvr elemevps 0/0'
 alias y='youtube-dl -c -l'
 
