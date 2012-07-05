@@ -24,7 +24,7 @@ alias p='cd ~/tools/goagent/; nohup python proxy.py 1>/dev/null 2>&1 &'
 alias vpn='cd ~/tools/sshuttle; bash sshuttle --dns -vvr elemevps 0/0'
 alias y='youtube-dl -c -l'
 
-alias xld='xl download --continue --delete'
+alias xld='xl download --continue --delete --tool aria2'
 alias xll='xl list --speed --progress'
 
 alias cdele='workon elemeenv; cd ~/workspace/eleme/trunk;'
