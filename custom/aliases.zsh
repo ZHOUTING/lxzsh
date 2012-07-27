@@ -15,8 +15,8 @@ alias pg='ps aux | grep'
 alias tmux='tmux -2'
 alias tmuxa='tmux a || tmux'
 
-alias rmds='find . -name ".DS_Store" -exec rm -f "{}" \;'
-alias rmpyc='find . -name "*.pyc" -exec rm -f "{}" \;'
+alias rmds='find . -name ".DS_Store" -delete'
+alias rmpyc='find . -name "*.pyc" -delete'
 
 alias s='pkill -f "ssh -Nfn -D 7070"; nohup ssh -Nfn -D 7070 elemevps 1>/dev/null 2>&1'
 alias wk='nohup python2.6 ~/tools/wiki/wikiserver.py 1>/dev/null 2>&1 &'
