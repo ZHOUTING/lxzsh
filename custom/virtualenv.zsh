@@ -11,15 +11,9 @@ if which virtualenvwrapper.sh 1>/dev/null; then
     export PIP_RESPECT_VIRTUALENV=true
 fi
 
-# use autoenv to autoload project virtualenv
-if [[ -f "/usr/local/bin/brew" ]]; then
-    if [[ -d "$(brew --prefix autoenv)" ]]; then
-        source $(brew --prefix autoenv)/activate.sh
-    fi
-fi
-
 # define auto_virtualenv to make autoenv better for virtualenv
-function autoenv_virtualenv () {
+function autoenv_virtualenv() {
+    # verify virtualenvwrapper installed
     if which virtualenvwrapper.sh 1>/dev/null; then
         source virtualenvwrapper.sh
     else
@@ -27,6 +21,7 @@ function autoenv_virtualenv () {
         exit $?
     fi
 
+    # activate or create virtualenv
     if workon | grep -q "^$1$"; then
         workon $1
     else
