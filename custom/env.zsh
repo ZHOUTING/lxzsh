@@ -12,6 +12,8 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -d "$(brew --prefix autoenv)" ]]; then
         source $(brew --prefix autoenv)/activate.sh
     fi
+elif [[ -d "$HOME/.autoenv" ]]; then
+    source "$HOME/.autoenv/activate.sh"
 fi
 
 # make man colorful
