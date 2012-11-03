@@ -14,6 +14,9 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     fi
 fi
 
+# Load RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 # test android sdk
 if [[ -d "$HOME/tools/android/platform-tools" ]]; then
     export PATH=$HOME/tools/android/platform-tools:$HOME/tools/android/platform:$HOME/tools/android/tools:$PATH
