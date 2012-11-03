@@ -49,6 +49,7 @@ plugins=(
     ruby
     rvm
     supervisor
+    systemd
     vagrant
     vi-mode
 )
