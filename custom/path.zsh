@@ -12,6 +12,10 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -d "$(brew --prefix ruby)" ]]; then
         export PATH=$(brew --prefix ruby)/bin:$PATH
     fi
+
+    if [[ -d "/usr/bin/core_perl/" ]]; then
+        export PATH=$PATH:"/usr/bin/core_perl/"
+    fi
 fi
 
 # Load RVM
