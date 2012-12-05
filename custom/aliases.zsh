@@ -18,9 +18,8 @@ alias tmuxa='tmux a || tmux'
 alias rmds='find . -name ".DS_Store" -delete'
 alias rmpyc='find . -name "*.pyc" -delete'
 
-alias s='pkill -f "ssh -Nfn -D 7070"; nohup ssh -Nfn -D 7070 elemevps 1>/dev/null 2>&1'
 alias wk='pkill -f "wikiserver.py"; nohup python2.6 ~/tools/wiki/wikiserver.py 1>/dev/null 2>&1 &'
-alias p='pkill -f "python proxy.py"; cd ~/tools/goagent/local/; nohup python proxy.py 1>/dev/null 2>&1 &'
+alias p='pkill -f "python proxy.py"; cd ~/tools/goagent/local/; workon pyenv; nohup python proxy.py 1>/dev/null 2>&1 &'
 alias y='youtube-dl -c -l'
 
 alias xld='xl download --continue --delete --tool aria2'
