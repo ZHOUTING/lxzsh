@@ -7,6 +7,9 @@ export LC_ALL=en_US.UTF-8
 export EDITOR=vim
 export CLICOLOR=1
 
+# fix gevent block bug
+export GEVENT_RESOLVER=block
+
 # use autoenv to autoload project virtualenv
 if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -d "$(brew --prefix autoenv)" ]]; then
