@@ -14,10 +14,6 @@ if [[ -f "/usr/local/bin/brew" ]]; then
         export PATH=$(brew --prefix ruby)/bin:$PATH
     fi
 
-    if [[ -d "/usr/bin/core_perl/" ]]; then
-        export PATH=$PATH:"/usr/bin/core_perl"
-    fi
-
     if [[ -d "/usr/local/share/npm/bin" ]]; then
         export PATH=$PATH:"/usr/local/share/npm/bin"
     fi
@@ -25,6 +21,14 @@ fi
 
 # Load RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+if [[ -d "/usr/bin/core_perl/" ]]; then
+    export PATH=$PATH:"/usr/bin/core_perl"
+fi
+
+if [[ -d "$HOME/Library/Haskell/bin" ]]; then
+    export PATH="$HOME/Library/Haskell/bin":$PATH
+fi
 
 # test android sdk
 if [[ -d "$HOME/tools/android/platform-tools" ]]; then
