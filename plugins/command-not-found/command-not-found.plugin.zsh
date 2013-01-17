@@ -2,6 +2,4 @@
 # as seen in http://www.porcheron.info/command-not-found-for-zsh/
 # this is installed in Ubuntu
 
-if [[ -f "/etc/zsh_command_not_found" ]]; then
-    source /etc/zsh_command_not_found
-fi
+[[ -e /etc/zsh_command_not_found ]] && source /etc/zsh_command_not_found
