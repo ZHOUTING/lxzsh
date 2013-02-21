@@ -19,6 +19,11 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     fi
 fi
 
+# Load grc
+if [[ -f "$(brew --prefix)/etc/grc.bashrc" ]]; then
+    source "$(brew --prefix)/etc/grc.bashrc"
+fi
+
 # Load RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -48,4 +53,3 @@ if [[ -f "/usr/local/bin/brew" ]]; then
 elif [[ -d "$HOME/.autoenv" ]]; then
     source "$HOME/.autoenv/activate.sh"
 fi
-
