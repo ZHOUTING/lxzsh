@@ -17,11 +17,10 @@ if [[ -f "/usr/local/bin/brew" ]]; then
     if [[ -d "/usr/local/share/npm/bin" ]]; then
         export PATH=$PATH:"/usr/local/share/npm/bin"
     fi
-fi
 
-# Load grc
-if [[ -f "$(brew --prefix)/etc/grc.bashrc" ]]; then
-    source "$(brew --prefix)/etc/grc.bashrc"
+    if [[ -f "$(brew --prefix)/etc/grc.bashrc" ]]; then
+        source "$(brew --prefix)/etc/grc.bashrc"
+    fi
 fi
 
 # Load RVM
